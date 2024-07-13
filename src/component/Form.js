@@ -11,7 +11,7 @@ function MyForm() {
 
     function operation(e) {
         let value = parseInt(e.target.value); // Get the value of the input and parse it to an integer
-       
+       if(value){
         if (value === random) {
             setResult("Yipee, you won!");
         } else if (value > random) {
@@ -22,6 +22,10 @@ function MyForm() {
             setResult("");
         }
     }
+    else{
+        setResult("")
+    }
+}
 
     return (
         <form>
