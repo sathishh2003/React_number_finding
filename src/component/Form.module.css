@@ -9,6 +9,7 @@ header{
     align-items: center;
     min-height: 100vh;
 }
+
 .inner{
         border:2px solid black;
         padding:2rem 5rem;
@@ -27,4 +28,7 @@ header{
     width:10rem;
     border:2px solid black;
     margin-bottom: 10px;
+}
+.input:focus{
+    background-color: rgba(186, 186, 186, 0.556);
 }

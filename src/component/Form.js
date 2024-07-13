@@ -3,7 +3,6 @@ import css from './Form.module.css';
 import React, { useState } from "react";
 
 const random = Math.ceil(Math.random() * 10); // Generate a random number (1 to 10)
-console.log(random);
 
 function MyForm() {
     /* const [guess, setGuess] = useState(""); // State for user's guess */
@@ -31,8 +30,7 @@ function MyForm() {
                     <label>Guess the number 1 to 10:&nbsp;&nbsp;</label>
                     <input
                         type="Number"
-                        className={css.input}
-                        onChange={operation}
+                        className={css.input}                        onChange={operation}
                         max={10}
                         min={0}
                     // Bind input value to state
